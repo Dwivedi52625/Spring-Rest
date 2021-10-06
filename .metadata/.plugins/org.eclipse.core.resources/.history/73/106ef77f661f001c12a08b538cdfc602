@@ -1,0 +1,5 @@
+package com.zipcode.details;
+
+public class Zipcode {
+
+}

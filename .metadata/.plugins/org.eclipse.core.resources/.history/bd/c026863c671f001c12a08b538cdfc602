@@ -1,0 +1,5 @@
+package com.zipcode.repository;
+
+public interface zip {
+
+}

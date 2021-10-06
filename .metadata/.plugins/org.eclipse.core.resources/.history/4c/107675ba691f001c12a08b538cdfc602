@@ -1,0 +1,5 @@
+package com.zipcode.controller;
+
+public class ZipcodeController {
+
+}

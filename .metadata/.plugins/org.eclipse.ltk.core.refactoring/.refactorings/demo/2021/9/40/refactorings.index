@@ -1,0 +1,8 @@
+1632645769673	Move 'InValidUser.html' to 'static'
+1632645781088	Move 'login.html' to 'static'
+1632645787760	Move 'signup.html' to 'static'
+1632645791718	Move 'ValidUser.html' to 'static'
+1632648176291	Move 'signup.html' to 'templates'
+1632648284411	Move 'login.html' to 'templates'
+1632648287387	Move 'InValidUser.html' to 'templates'
+1632648289806	Move 'ValidUser.html' to 'templates'

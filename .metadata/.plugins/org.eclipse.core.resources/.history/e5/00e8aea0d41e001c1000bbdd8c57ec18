@@ -1,0 +1,33 @@
+package com.userlogin.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="UserDetails")
+public class User {
+    @Id
+	private String UserName;
+	private Long Password;
+	public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String UserName) {
+		this.UserName = UserName;
+	}
+	public Long getPassword() {
+		return Password;
+	}
+	public void setPassword(Long password) {
+		Password = password;
+	}
+	public User(String UserName, Long password) {
+		super();
+		this.UserName = UserName;
+		Password = password;
+	}
+	@Override
+	public String toString() {
+		return "User [UserName=" + UserName + ", Password=" + Password + "]";
+	}
+	
+}

@@ -1,0 +1,5 @@
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=User
+server.port=3455
+spring.data.mongodb.uri=mongodb+srv://Dwivedi52625:Kanak%4052625@cluster0.mjxnt.mongodb.net/User?retryWrites=true&w=majority

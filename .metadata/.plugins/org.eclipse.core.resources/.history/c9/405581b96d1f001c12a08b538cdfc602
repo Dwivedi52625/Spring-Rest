@@ -1,0 +1,38 @@
+package com.zipcode.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import com.zipcode.details.Zipcode;
+import com.zipcode.repository.zip;
+
+@RestController
+public class ZipcodeController {
+    @Autowired
+    private zip zp;
+	
+	@GetMapping("/in")
+	public String getall() {
+		return "successfull";
+	}
+	 @PostMapping("/add")
+	 public Zipcode saveEmployee(@RequestBody Zipcode zip) {
+	    	zp.save(zip);
+	    	System.out.println("add");
+//	    	return "Successfully added";
+	    	return zip;
+	    }
+	 @GetMapping("/employeelist")
+	 public List<Zipcode> geteverything(){
+	    	List<Zipcode> lst = zp.findAll();
+	    	return lst;
+	    }
+	 @PostMapping
+	 public String zipcode() {
+		 return "zipcode.html";
+	 }
+}
